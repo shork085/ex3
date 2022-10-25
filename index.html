@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            /* overflow: hidden; */
+        }
+
+        #bg {
+            width: 380px;
+            height: 100%;
+            top: 0;
+            margin: 0px auto;
+            position: relative;
+        }
+
+        #bg>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #head {
+            width: 85%;
+            height: 85%;
+            position: absolute;
+            background-image: url("img/head.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            top: 70px;
+            right: 10px;
+            /* overflow: hidden; */
+        }
+
+        #content {
+            width: 34%;
+            height: 34%;
+            position: absolute;
+            background-image: url("img/fu.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            left: 20px;
+            top: 142px;
+        }
+
+        #yg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            background-image: url("img/yg.png");
+            background-size: 100%;
+            overflow: hidden;
+        }
+
+        #cloth {
+            width: 440px;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+        }
+
+        #cloth>img {
+            cursor: pointer;
+            position: absolute;
+            width: 60%;
+            height: 60%;
+        }
+
+        #cloth>img:hover {
+            transform: scale(1.1);
+        }
+
+        #cloth>img:nth-of-type(1) {
+            right: 109px;
+            bottom: 79px;
+        }
+
+        #cloth>img:nth-of-type(2) {
+            right: -5px;
+            bottom: 69px;
+        }
+
+        #cloth>img:nth-of-type(3) {
+            right: 0px;
+            bottom: 145px;
+            width: 50%;
+            height: 50%;
+        }
+
+        #button {
+            width: 200px;
+            height: 310px;
+            position: absolute;
+            /* background-image: url("img/click.png"); */
+            right: 0px;
+            bottom: 0px;
+            background-size: 100%;
+        }
+
+        #button>img {
+            /* cursor: pointer; */
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        #button>a {
+            position: absolute;
+            right: 60px;
+            bottom: 50px;
+            text-decoration: none;
+            font-size: 25px;
+            color: dimgray;
+            /* font-weight: bold; */
+            font-family: "STHupo";
+        }
+
+        #under {
+            width: 200px;
+            height: 35px;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+
+        #under>img {
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            left: 15px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bg">
+        <img src="img/bg.jpg" alt="">
+        <div id="yg">
+            <div id="head"></div>
+            <div id="content"></div>
+            <div id="cloth">
+                <img src="img/c1.png" alt="">
+                <img src="img/c2.png" alt="">
+                <img src="img/c3.png" alt="">
+            </div>
+        </div>
+        <div id="button">
+            <img src="img/click.png" alt="">
+            <a href="p2.html">开始<br>定制</a>
+        </div>
+        <div id="under">
+            <img src="img/combine.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
